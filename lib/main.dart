@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:maplenou/screens/home_screen.dart';
+import 'package:maplenou/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Maplenou',
       debugShowCheckedModeBanner: false,
-      home: const HomeScreen(),
+      initialRoute: '/home',
+      routes: appRoutes,
     );
   }
 }
