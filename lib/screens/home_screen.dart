@@ -25,7 +25,13 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF4F4F4),
-      appBar: const Myappbar(),
+      appBar: const MyAppBar(
+          title: "Maplenou",
+          centerTitle: true,
+          leadingIcon: Icons.menu,
+          actionIcon: Icons.person,
+          onLeadingPressed: null,
+          onActionPressed: null),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 12),
         child: Column(
