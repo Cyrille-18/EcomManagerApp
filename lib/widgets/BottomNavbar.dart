@@ -13,10 +13,10 @@ class Bottomnavbar extends StatelessWidget {
       _showMoreOptions(context);
     } else {
       String route = switch (index) {
-        0 => '/acceuil',
-        1 => '/commande',
+        0 => '/home',
+        1 => '/orders',
         2 => '/produit',
-        _ => '/acceuil', //default
+        _ => '/home', //default
       };
       Navigator.pushReplacementNamed(context, route);
     }
