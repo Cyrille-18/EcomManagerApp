@@ -41,7 +41,9 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: backgroundColor,
-      elevation: 0,
+      surfaceTintColor:
+          Colors.transparent, // empêche le changement de teinte au scroll
+      elevation: 0, // pas d'ombre par défaut
       automaticallyImplyLeading: false,
       leading: leadingIcon != null
           ? IconButton(
