@@ -60,7 +60,16 @@ class Bottomnavbar extends StatelessWidget {
                 title: const Text('Sous-catégories'),
                 onTap: () {
                   Navigator.pop(context);
-                  Navigator.pushNamed(context, '/sous-categories');
+                  Navigator.pushNamed(context, '/subcategories');
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.local_shipping_outlined,
+                    color: Colors.black),
+                title: const Text('Fournisseurs'),
+                onTap: () {
+                  Navigator.pop(context);
+                  Navigator.pushNamed(context, '/suppliers');
                 },
               ),
               ListTile(
@@ -114,12 +123,12 @@ class Bottomnavbar extends StatelessWidget {
         BottomNavigationBarItem(
           icon: Icon(Icons.receipt_long_outlined),
           activeIcon: Icon(Icons.receipt_long),
-          label: 'Commande',
+          label: 'Commandes',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.storefront_outlined),
           activeIcon: Icon(Icons.storefront),
-          label: 'Produit',
+          label: 'Produits',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.more_horiz),
