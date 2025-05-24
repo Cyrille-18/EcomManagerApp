@@ -20,12 +20,15 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF9F9F9),
-      appBar: const MyAppBar(
+      appBar: MyAppBar(
         title: "Catégories",
         subtitle: "Gérer vos catégories de produits",
         centerTitle: false,
         actionIcon: Icons.add_circle_outline_rounded,
         actionIconSize: 30,
+        onActionPressed: () {
+          Navigator.pushNamed(context, '/addcategory');
+        },
       ),
       body: ListView.builder(
         itemCount: categories.length,
