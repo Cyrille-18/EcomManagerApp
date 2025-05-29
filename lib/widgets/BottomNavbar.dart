@@ -15,7 +15,7 @@ class Bottomnavbar extends StatelessWidget {
       String route = switch (index) {
         0 => '/home',
         1 => '/orders',
-        2 => '/produit',
+        2 => '/products',
         _ => '/home', //default
       };
       Navigator.pushReplacementNamed(context, route);
